@@ -169,3 +169,172 @@ notifying browser that file changed:  /realfa/views.js
 [0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
 [32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.179 seconds.[0m
 notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.146 seconds.[0m
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.256 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.226 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.251 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.215 seconds.[0m
+notifying browser that file changed:  /realfa/subs.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.17 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.151 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.148 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.211 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.147 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.249 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.222 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.204 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 17 and column 1 on file /Users/questmac/Public/learning/cljlibs/realfa/src/cljs/realfa/routes.cljs, line 36, column 1
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.242 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.218 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.236 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.237 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.236 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.184 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.156 seconds.[0m
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.215 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.156 seconds.[0m
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.165 seconds.[0m
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.155 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.249 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.368 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.231 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.231 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.375 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+Figwheel: focusing on build-ids (dev)
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/compiled/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 17 and column 1 on file /Users/questmac/Public/learning/cljlibs/realfa/src/cljs/realfa/routes.cljs, line 36, column 1
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 8.473 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+notifying browser that file changed:  /realfa/routes.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.334 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/routes.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.206 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.242 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.378 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.333 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.226 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.163 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.354 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.283 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.262 seconds.[0m
+notifying browser that file changed:  /realfa/handlers.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.363 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.385 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.376 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.234 seconds.[0m
+notifying browser that file changed:  /realfa/views.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.176 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js
+[0mCompiling "resources/public/js/compiled/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/compiled/app.js" in 0.16 seconds.[0m
+notifying browser that file changed:  resources/public/js/compiled/out/cljs_deps.js
+notifying browser that file changed:  /realfa/db.js

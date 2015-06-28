@@ -4,3 +4,4 @@
 /target
 .nrepl-port
 .lein-failures
+figwheel_server.log

@@ -16,3 +16,8 @@
   :nama
   (fn [db]
     (reaction (:nama @db))))
+
+(re-frame/register-sub
+  :matrix
+  (fn [db]
+    (reaction (:matrix @db))))

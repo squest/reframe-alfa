@@ -1,14 +1,10 @@
 (ns realfa.views
-  (:require [re-frame.core :as re-frame]
+  (:require [re-frame.core :refer [subscribe dispatch]]
             [re-com.core :as re-com]))
-
-(defn value
-  [target]
-  (-> target .-target .-value))
 
 ;; --------------------
 (defn home-title []
-  (let [name (re-frame/subscribe [:name])]
+  (let [name (subscribe [:name])]
     (fn []
       [re-com/title
        :label (str "Hello from " @name ". This is the Home Page.")
@@ -33,25 +29,47 @@
 
 ;; Jojon page ----------------------
 
+(defn int-value
+  [tar]
+  (js/parseInt (-> tar .-target .-value)))
+
 (defn input-text []
   (fn []
     [:div
      [:input {:type      "text"
-              :on-change #(re-frame/dispatch [:change-nama (value %)])}]]))
+              :on-change #(dispatch [:change-nama (-> % .-target .-value)])}]]))
 
 (defn jojon-box []
-  (let [nama (re-frame/subscribe [:nama])]
+  (let [nama (subscribe [:nama])]
     (fn []
       [:div
        [input-text]
        [:div [:h1 (str "Hello " (let [[a b] @nama] b))]]])))
+
+(defn jojon-matrix []
+  (let [matrix (subscribe [:matrix])]
+    (fn []
+      [:div
+       [:p (str @matrix)]
+       [:table
+        (for [i (range 2015 2023)]
+          [:tr (for [j (range 7)]
+                 [:td [:input {:type        "text"
+                               :size        "15"
+                               :placeholder (let [num (aget (get @matrix i) j)]
+                                              (if (number? num) num 0))
+                               :on-change   #(dispatch
+                                              [:set-matrix i j (int-value %)])}]])])]])))
 
 (declare link-to-home-page)
 
 (defn jojon-panel []
   [re-com/v-box
    :gap "1em"
-   :children [[jojon-box] [link-to-about-page] [link-to-home-page]]])
+   :children [[jojon-box]
+              [link-to-about-page]
+              [link-to-home-page]
+              [jojon-matrix]]])
 
 ;; --------------------
 (defn about-title []
@@ -77,7 +95,7 @@
 (defmethod panels :default [] [:div])
 
 (defn main-panel []
-  (let [active-panel (re-frame/subscribe [:active-panel])]
+  (let [active-panel (subscribe [:active-panel])]
     (fn []
       [re-com/v-box
        :height "100%"

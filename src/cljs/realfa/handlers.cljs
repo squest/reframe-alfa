@@ -17,3 +17,12 @@
   :change-nama
   (fn [db nama]
     (assoc db :nama nama)))
+
+(re-frame/register-handler
+  :set-matrix
+  (fn [db year part value]
+    (let [cells (get-in db [:matrix year])]
+      (->> #(into [] (concat (take part cells)
+                            [value]
+                            (drop (inc part) cells)))
+           (update-in db [:matrix year])))))

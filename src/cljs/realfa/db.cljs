@@ -1,4 +1,5 @@
-(ns realfa.db)
+(ns realfa.db
+  (:require
+    [reagent.core :refer [atom]]))
 
-(def default-db
-  {:name "re-frame"})
+(def app-state (atom {}))
