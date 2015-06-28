@@ -31,7 +31,8 @@
 
 (defn int-value
   [tar]
-  (js/parseInt (-> tar .-target .-value)))
+  (let [num (js/parseInt (-> tar .-target .-value))]
+    (if (js/isNaN num) 0 num)))
 
 (defn input-text []
   (fn []
@@ -47,19 +48,20 @@
        [input-text]
        [:div [:h1 (str "Hello " @nama)]]])))
 
-(defn jojon-matrix [matrix]
-  (fn [matrix]
-    [:div
-     [:p (str @matrix)]
-     [:table
-      (for [idx (range 7)]
-        [:tr (for [year (range 2015 2023)]
-               [:td
-                [:input
-                 {:type        "text"
-                  :size        "15"
-                  :placeholder (aget (@matrix year) idx)
-                  :on-change   #(dispatch [:set-matrix year idx (int-value %)])}]])])]]))
+(defn jojon-matrix []
+  (let [matrix (subscribe [:matrix])]
+    (fn []
+      [:div
+       [:p (str @matrix)]
+       [:table
+        (for [idx (range 7)]
+          [:tr (for [year (range 2015 2023)]
+                 [:td
+                  [:input
+                   {:type        "text"
+                    :size        "15"
+                    :placeholder (nth (@matrix year) idx)
+                    :on-change   #(dispatch [:set-matrix year idx (int-value %)])}]])])]])))
 
 (defn jojon-summary
   []
@@ -70,7 +72,7 @@
              (for [con @matrix]
                [:tr
                 [:td {:col 25} [:strong (key con)]]
-                [:td (reduce + (into [] (val con)))]])]])))
+                [:td (reduce + (val con))]])]])))
 
 (declare link-to-home-page)
 
@@ -80,7 +82,7 @@
    :children [[jojon-box]
               [link-to-about-page]
               [link-to-home-page]
-              [jojon-matrix (subscribe [:matrix])]
+              [jojon-matrix]
               [jojon-summary]]])
 
 ;; --------------------

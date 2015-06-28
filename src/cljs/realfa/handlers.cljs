@@ -22,5 +22,5 @@
   :set-matrix
   (fn [db [_ year idx value]]
     (let [cells (get-in db [:matrix year])]
-      (do (aset cells idx value)
-          (update-in db [:matrix] #(assoc % year cells))))))
+      (->> #(assoc % year (update-in cells [idx] (fn [n] value)))
+           (update-in db [:matrix])))))
