@@ -15,14 +15,12 @@
 
 (re-frame/register-handler
   :change-nama
-  (fn [db nama]
+  (fn [db [_ nama]]
     (assoc db :nama nama)))
 
 (re-frame/register-handler
   :set-matrix
-  (fn [db year part value]
+  (fn [db [_ year idx value]]
     (let [cells (get-in db [:matrix year])]
-      (->> #(into [] (concat (take part cells)
-                            [value]
-                            (drop (inc part) cells)))
-           (update-in db [:matrix year])))))
+      (do (aset cells idx value)
+          (update-in db [:matrix] #(assoc % year cells))))))

@@ -36,30 +36,41 @@
 (defn input-text []
   (fn []
     [:div
-     [:input {:type      "text"
-              :on-change #(dispatch [:change-nama (-> % .-target .-value)])}]]))
+     [:input
+      {:type      "text"
+       :on-change #(dispatch [:change-nama (-> % .-target .-value)])}]]))
 
 (defn jojon-box []
   (let [nama (subscribe [:nama])]
     (fn []
       [:div
        [input-text]
-       [:div [:h1 (str "Hello " (let [[a b] @nama] b))]]])))
+       [:div [:h1 (str "Hello " @nama)]]])))
 
-(defn jojon-matrix []
+(defn jojon-matrix [matrix]
+  (fn [matrix]
+    [:div
+     [:p (str @matrix)]
+     [:table
+      (for [idx (range 7)]
+        [:tr (for [year (range 2015 2023)]
+               [:td
+                [:input
+                 {:type        "text"
+                  :size        "15"
+                  :placeholder (aget (@matrix year) idx)
+                  :on-change   #(dispatch [:set-matrix year idx (int-value %)])}]])])]]))
+
+(defn jojon-summary
+  []
   (let [matrix (subscribe [:matrix])]
     (fn []
-      [:div
-       [:p (str @matrix)]
-       [:table
-        (for [i (range 2015 2023)]
-          [:tr (for [j (range 7)]
-                 [:td [:input {:type        "text"
-                               :size        "15"
-                               :placeholder (let [num (aget (get @matrix i) j)]
-                                              (if (number? num) num 0))
-                               :on-change   #(dispatch
-                                              [:set-matrix i j (int-value %)])}]])])]])))
+      [:div [:table
+             [:thead [:th [:h4 "Year  "]] [:th [:h4 "Valuation"]]]
+             (for [con @matrix]
+               [:tr
+                [:td {:col 25} [:strong (key con)]]
+                [:td (reduce + (into [] (val con)))]])]])))
 
 (declare link-to-home-page)
 
@@ -69,7 +80,8 @@
    :children [[jojon-box]
               [link-to-about-page]
               [link-to-home-page]
-              [jojon-matrix]]])
+              [jojon-matrix (subscribe [:matrix])]
+              [jojon-summary]]])
 
 ;; --------------------
 (defn about-title []

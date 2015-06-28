@@ -1,5 +1,6 @@
-(ns realfa.db
-  (:require
-    [reagent.core :refer [atom]]))
+(ns realfa.db)
 
-(def app-state (atom {}))
+(def default-db
+  {:name   "re-frame"
+   :matrix (into {} (map #(vector % (long-array 7 0))
+                         (range 2015 (+ 2015 8))))})
