@@ -6,3 +6,4 @@
 .lein-failures
 figwheel_server.log
 *.log
+*.css
